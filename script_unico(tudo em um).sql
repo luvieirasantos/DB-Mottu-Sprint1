@@ -90,6 +90,7 @@ INSERT INTO mottu_movimentacao (movimentacao_id, moto_id, operador_id, zona_orig
 INSERT INTO mottu_movimentacao (movimentacao_id, moto_id, operador_id, zona_origem_id, zona_destino_id, data_movimentacao) VALUES (5, 5, 5, 5, 2, SYSDATE);
 
 
+
 -- Primeiro Bloco Anônimo: Consulta com JOIN, GROUP BY e ORDER BY
 DECLARE
     CURSOR c_motos IS
@@ -183,7 +184,7 @@ BEGIN
         );
     END LOOP;
 END;
-
+/
 
 
 
@@ -217,3 +218,4 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('Anterior: ' || v_placa_anterior || ' | Atual: ' || v_placa_atual || ' | Próxima: ' || v_placa_proxima);
     END LOOP;
 END;
+/
